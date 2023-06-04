@@ -5,50 +5,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FLEXBOX</title>
+    <title>Flexbox</title>
     <style>
         * {
-            box-sizing: border-box;
-            margin: 0px;
             padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
         }
 
-        html body {
-            height: 100%;
-        }
-        .flex-container{
+        .flex-container {
+            background-color: indianred;
             display: flex;
-            border: 1px solid darkolivegreen;
-            height: 500px;
-            align-items: first baseline;
-            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            /* flex-flow: row wrap; */
+            /*shorthand way to write flex in flex container*/
+            /* justify-content: space-evenly; */
+            height: 600px;
+            /* align-items: stretch; */
+            /* note the great difference between justify content and align content is that justify content works horizontally and align-content works vertically. */
+            /* note ther is a similarity between justify content and align-content thatr is this both properties gives space to the child but difference is only
+            of horizontall and vertical. */
+            /* align-content: space-evenly; */
+        }
+
+        .flex-child {
+            background-color: wheat;
+            padding: 20px;
+            margin: 20px;
+            width: 150px;
+            text-align: center;
 
         }
-        .item{
-            border: 1px solid;
-            background-color: darkgray;
-            padding: 30px;
-            
-        }   
-        #item5{
+         #one{
+            /* order : 2; */
+            /* flex-grow: 1; */
+            /* flex-shrink: 3; */
+            align-self: first baseline;
+         }
+
+         #two{
+            /* order : 1; */
+            /* flex-grow: 1; */
+            /* flex-basis: 300px; */
+            /* note : the only difference between grow and basis is that
+            grow covers the equal space in the width while basis considers
+            the width according to the range given by us. */
             align-self: center;
-        } 
+         }
+
+         #three{
+            /* order : 3; */
+            /* flex-grow: 1; */
+            align-self: flex-end;
+         }
     </style>
 </head>
 
 <body>
-    <section class="flex-container">
-        <div class="item"> flexbox 1</div>
-        <div class="item"> flexbox 2</div>
-        <div class="item"> flexbox 3</div>
-        <div class="item"> flexbox 4</div>
-        <div class="item" id="item5"> flexbox 5</div>
-        <!-- <div class="item"> flexbox 6</div>
-        <div class="item"> flexbox 7</div>
-        <div class="item"> flexbox 8</div>
-        <div class="item"> flexbox 9</div>
-        <div class="item"> flexbox 10</div> -->
-    </section>
+    <div class="flex-container">
+        <div class="flex-child" id="one">One</div>
+        <div class="flex-child" id="two">Two</div>
+        <div class="flex-child" id="three">Three</div>
+        <!-- <div class="flex-child" id="four">Four</div>
+        <div class="flex-child" id="five">Five</div>
+        <div class="flex-child" id="six">Six</div>
+        <div class="flex-child" id="seven">Seven</div>
+        <div class="flex-child" id="eight">Eight</div>
+        <div class="flex-child" id="nine">Nine</div>
+        <div class="flex-child" id="ten">Ten</div> -->
+       
 </body>
 
 </html>
