@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BORDERS IN CSS</title>
+</head>
+<body>
+    <!-- border shorthand order -->
+    <!-- The border property is a shorthand property for the following individual border properties:
+border-width
+border-style (required)
+border-color
+ -->
+    <!-- border in px
+    border-style- 1)border-top-style,border-bottom-style,border-right-style,border-left-style.(bordersides)
+                  2)dotted, dashed, inset, outset, hidden, double, ridge, groove etc and more.
+    border-color- 1)border-top-color,border-bottom-color,border-right-color,border-left-color.(bordersidescolors)
+                  2)common-color : border-color:red;
+    border-width- 1)border-top-width,border-bottom-width,border-right-width,border-left-width.(bordersideswidth)
+                  2)common-width : border-width:10px;
+    border-radius- 1) border-radius:1px;
+ -->
+    <P style="border: 1px dotted blue; border-width: 10px">
+        Lorem ipsum dolor sit amet.
+    </P>
+    <P style="border:1px dashed; border-width: 10px">
+        Lorem ipsum dolor sit amet.
+    </P>
+    <P style="border:1px inset olive; border-width: 10px">
+        Lorem ipsum dolor sit amet.
+    </P>
+    <P style="border: 1px outset red ; border-width: 10px">
+        Lorem ipsum dolor sit amet.
+    </P>
+    <P style="border: 1px double orange; border-width: 10px;">
+        Lorem ipsum dolor sit amet.
+    </P>
+    <p
+        style="border:1px;border-top-style: dashed; border-bottom-style: dotted; border-right-style: double;border-left-style: inset; border-color: aquamarine; border-width: 10px;">
+        Lorem ipsum
+        dolor sit amet.</p>
+    <p style="border: 1px;border-style:double; border-top-color: aqua; border-width: 10px; ">Lorem ipsum dolor sit amet.
+    </p>
+    <p style="border: 1px dotted red">Lorem ipsum dolor sit amet.</p>
+   <p style=" border:1px solid orange; border-radius: 5px; border-width: 10px;">Lorem ipsum dolor sit amet.</p>
+</body>
+
+</html>
